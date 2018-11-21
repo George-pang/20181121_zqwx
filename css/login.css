@@ -1,0 +1,141 @@
+/* 登陆注册页样式 */
+/* register style start */
+.r_main_box {
+  margin-top: 50px;
+  padding: 0 33px;
+}
+.r_main_box .title {
+  font-size: 20px;
+  color: #3784fa;
+}
+.r_main_box .reg_form {
+  margin-top: 20px;
+}
+.r_main_box .reg_form .form .input-item {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+}
+.r_main_box .reg_form .form .input-item > input {
+  width: 100%;
+  color: #999;
+}
+.r_main_box .reg_form .form .input-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.r_main_box .reg_form .form .zym {
+  display: flex;
+  align-items: center;
+}
+.r_main_box .reg_form .form .zym .zym-input-box {
+  flex: 1;
+  padding-right: 15px;
+}
+.r_main_box .reg_form .form .zym .zym-input-box > input {
+  width: 100%;
+  color: #999;
+}
+.r_main_box .reg_form .form .zym .get-zym {
+  display: inline-block;
+  width: 90px;
+  height: 25px;
+  line-height: 23px;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  border-radius: 12.5px;
+  border: solid 1px #999;
+  cursor: pointer;
+}
+.r_main_box .reg_form .form .btn-submit {
+  margin-top: 28px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: HiraginoSansGB-W3;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #3784fa;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.r_main_box .tips {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #999;
+}
+/* register style end */
+/* login style start */
+.l_main_box {
+  margin-top: 74px;
+  padding: 0 33px;
+}
+.l_main_box .logo {
+  font-family: HiraginoSansGB-W6;
+  font-size: 50px;
+  line-height: 1em;
+  color: #3784fa;
+  text-align: center;
+}
+.l_main_box .login-form {
+  margin-top: 26px;
+}
+.l_main_box .login-form .form .input-item {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+}
+.l_main_box .login-form .form .input-item > input {
+  width: 100%;
+}
+.l_main_box .login-form .form .input-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.l_main_box .login-form .form .go {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.l_main_box .login-form .form .go .register {
+  float: left;
+  font-size: 12px;
+  line-height: 1em;
+  color: #3784fa;
+}
+.l_main_box .login-form .form .go .forget {
+  float: right;
+  font-size: 12px;
+  line-height: 1em;
+  color: #666;
+}
+.l_main_box .login-form .form .btn-dl-account,
+.l_main_box .login-form .form .btn-dl-weixin {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  font-family: HiraginoSansGB-W3;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.l_main_box .login-form .form .btn-dl-account {
+  margin-top: 36px;
+  background-color: #3784fa;
+}
+.l_main_box .login-form .form .btn-dl-weixin {
+  margin-top: 25px;
+  background-color: #00c269;
+}
+/* login style end */
