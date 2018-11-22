@@ -72,12 +72,12 @@
 }
 .my_main .my-list > .list .my-course .course-list .course-item {
   float: left;
-  width: 50%;
+  width: 45vw;
+  height: 100%;
   padding: 0 10px;
 }
 .my_main .my-list > .list .my-course .course-list .course-item .course {
   position: relative;
-  background-color: #02a3fb;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -96,17 +96,215 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 47%;
+  width: 0;
   background-color: #ffb341;
   opacity: 0.8;
 }
 .my_main .my-list > .list .my-course .course-list .course-item img {
   width: 100%;
-  height: auto;
+  border-radius: 10px;
 }
 .my_main .my-list > .list .my-course .course-list .course-item .title {
   margin-top: 15px;
   font-size: 14px;
   line-height: 1em;
   color: #333333;
+}
+/* ************************* */
+/* 个人设置 */
+.setting_main {
+  margin-top: 0;
+  padding: 0;
+}
+.setting_main .setting_list {
+  background-color: #fff;
+}
+.setting_main .setting_list .setting-item {
+  position: relative;
+  padding: 0 12px;
+  overflow: hidden;
+}
+.setting_main .setting_list .setting-item .key {
+  font-family: HiraginoSansGB-W3;
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: #2a2a2a;
+}
+.setting_main .setting_list .setting-item .more {
+  float: right;
+}
+.setting_main .setting_list .setting-item .more .name {
+  margin-right: 10px;
+  font-family: HiraginoSansGB-W3;
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #999999;
+}
+.setting_main .setting_list .setting-item .more .icon-more > img {
+  width: 15px;
+  height: auto;
+}
+.setting_main .setting_list .setting-item > a {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.body_bg {
+  background-color: #f5f5f5;
+}
+.border_bottom_1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  opacity: 0.5;
+}
+/* ************************** */
+/* 我的消息 */
+.msg_main {
+  margin-top: 0;
+  padding: 0;
+}
+.msg_main .msg_list {
+  background-color: #fff;
+}
+.msg_main .msg_list .msg_item {
+  position: relative;
+  height: 90px;
+  padding: 0 20px;
+}
+.msg_main .msg_list .msg_item .left_icon {
+  margin-right: 15px;
+}
+.msg_main .msg_list .msg_item .left_icon > img {
+  width: 55px;
+  height: auto;
+}
+.msg_main .msg_list .msg_item .right_msg {
+  flex: 1;
+}
+.msg_main .msg_list .msg_item .right_msg .title {
+  font-family: PingFang-SC-Bold;
+  font-size: 16px;
+  line-height: 1em;
+  color: #333333;
+}
+.msg_main .msg_list .msg_item .right_msg .content {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1em;
+  color: #999999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.msg_main .msg_list .msg_item > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* ************************** */
+/* 我的课程 */
+.my_course_main {
+  margin-top: 0;
+  padding: 0;
+}
+.my_course_main .nav-tabs {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1.5px 3.5px 0px rgba(55, 132, 250, 0.1);
+}
+.my_course_main .nav-tabs .nav-tab {
+  position: relative;
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+.my_course_main .nav-tabs .active {
+  color: #3784fa;
+}
+.my_course_main .nav-tabs .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 3px;
+  background-color: #3784fa;
+  border-radius: 1.5px;
+}
+.my_course_main .tab-content .tab-panel {
+  display: none;
+}
+.my_course_main .tab-content .tab-panel:nth-child(1) {
+  display: block;
+}
+.my_course_main .tab-content .tab-panel .course-list {
+  padding: 0 12px;
+}
+.my_course_main .tab-content .tab-panel .course-list .course {
+  margin-top: 20px;
+}
+.my_course_main .tab-content .tab-panel .course-list .course > a {
+  display: flex;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .left-pic {
+  margin-right: 13px;
+  background-color: #02a3fb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .left-pic > img {
+  width: 125px;
+  height: auto;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info {
+  flex: 1;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info .course-name {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1em;
+  color: #333333;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info .progress {
+  margin-top: 12px;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info .progress .progress-bar {
+  position: relative;
+  height: 6.5px;
+  background-color: #3784fa;
+  border-radius: 3.5px;
+  overflow: hidden;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info .progress .progress-bar .bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffb341;
+}
+.my_course_main .tab-content .tab-panel .course-list .course .right-info .progress .progress-txt {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1em;
+  color: #999999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 我的收藏 */
+.collect_main .tab-content .tab-panel .course-list .course .right-info {
+  display: flex;
+  align-items: center;
+}
+.collect_main .tab-content .tab-panel .course-list .course .right-info .course-name {
+  margin-top: 0;
 }

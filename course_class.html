@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>课程分类</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/iscroll-infinite.js"></script>
+    <script src="js/course.js"></script>
+</head>
+
+<body class="padding-top">
+    <div class="search-box">
+        <div class="search-bar">
+            <span class="search-icon">
+                <img src="images/icon1.png" alt="">
+            </span>
+            <div class="search-input">
+                <input type="text" id="searchInput" placeholder="请输入您需要的课程名">
+            </div>
+        </div>
+    </div>
+    <div class="class_main">
+        <div class="tab-menu">
+            <div class="menu">
+                <div class="menu-left">
+                    <a href="javascript:;" class="btn-aside-menu ">
+                        <img src="images/icon13.png" alt="">
+                    </a>
+                    <span class="curClass">
+                        外语
+                    </span>
+                </div>
+                <div class="menu-right">
+                    <a href="javascript:;" class="btn-filter">
+                        筛选
+                    </a>
+                </div>
+            </div>
+            <div id="wrapper">
+                <ul class="nav-tabs">
+                    <li class="nav-tab active">
+                        <a href="javascript:;">
+                            全部
+                        </a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="javascript:;">
+                            通用英语
+                        </a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="javascript:;">
+                            专门用途英语
+                        </a>
+                    </li>
+                    <li class="nav-tab">
+                        <a href="javascript:;">
+                            文学与语言学
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <!-- 根据ajax请求返回数据对应显示筛选后课程列表的面板 -->
+            <div class="tab-panel">
+                <ul class="course-list">
+                    <li class="course-item">
+                        <a href="">
+                            <div class="left-pic">
+                                <img src="images/e1.jpg" alt="">
+                            </div>
+                            <div class="right-info">
+                                <h4 class="name">
+                                    综合英语
+                                </h4>
+                                <p class="people">
+                                    <span class="icon_people">
+                                        <img src="images/icon18.png" alt="">
+                                    </span>
+                                    <span class="num">158474</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="course-item">
+                        <a href="">
+                            <div class="left-pic">
+                                <img src="images/e1.jpg" alt="">
+                            </div>
+                            <div class="right-info">
+                                <h4 class="name">
+                                    综合英语
+                                </h4>
+                                <p class="people">
+                                    <span class="icon_people">
+                                        <img src="images/icon18.png" alt="">
+                                    </span>
+                                    <span class="num">158474</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="course-item">
+                        <a href="">
+                            <div class="left-pic">
+                                <img src="images/e1.jpg" alt="">
+                            </div>
+                            <div class="right-info">
+                                <h4 class="name">
+                                    综合英语
+                                </h4>
+                                <p class="people">
+                                    <span class="icon_people">
+                                        <img src="images/icon18.png" alt="">
+                                    </span>
+                                    <span class="num">158474</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 课程分类--侧边栏 -->
+    <div class="aside_menu_container">
+        <div class="aside_menu">
+            <h3 class="title">
+                课程分类
+            </h3>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="javascript:;">
+                        <span class="icon">
+                            <img src="images/icon14.png" alt="">
+                        </span>
+                        <span class="item-name">
+                            国学国艺
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="item">
+                            <a href="javascript:;">
+                                音乐
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                舞蹈
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                书法
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:;">
+                        <span class="icon">
+                            <img src="images/icon15.png" alt="">
+                        </span>
+                        <span class="item-name">
+                            家长学堂
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="item">
+                            <a href="javascript:;">
+                                音乐
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                舞蹈
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                书法
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:;">
+                        <span class="icon">
+                            <img src="images/icon16.png" alt="">
+                        </span>
+                        <span class="item-name">
+                            同步课堂
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="item">
+                            <a href="javascript:;">
+                                音乐
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                舞蹈
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                书法
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="btn-menu-close">
+                <img src="images/shrink.png" alt="">
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
