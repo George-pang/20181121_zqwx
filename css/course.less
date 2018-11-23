@@ -607,9 +607,23 @@ color: rgba(255,255,255,.7);
         .chapter-list{
             .chapter{
                 .chapter-name{
+                    position: relative;
                     font-size: 14px;
                     line-height: 2em;
                     color: #333;
+                    cursor: pointer;
+                    .icon-stretch{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        width: 28px;
+                        text-align: center;
+                        transform: translateY(-50%);
+                        >img{
+                            width: 14px;
+                            height: auto;
+                        }
+                    }
                 }
                 .section-list{
                     // display: none;

@@ -139,6 +139,23 @@ $(function () {
 
 
         // 3、课程目录子菜单伸缩
+        $(".details_main .chapter-name").on("click",function(){
+            $(this).siblings(".section-list").toggle("normal",function(){
+                var flag=$(this).css("display");
+                if(flag=="block"){
+                    tempObj=$(this).siblings(".chapter-name").find(".icon-stretch");
+                    var imgSrc=tempObj.data("retract");
+                    tempObj.find("img").attr("src",imgSrc); //设置图片路径用attr()方法
+
+                }else if(flag=="none"){
+                    tempObj=$(this).siblings(".chapter-name").find(".icon-stretch");
+                    var imgSrc=tempObj.data("open");
+                    console.log(imgSrc);
+                    tempObj.find("img").attr("src",imgSrc);
+                }
+            });
+        });
+
     }());
 
 

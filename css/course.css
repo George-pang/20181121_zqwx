@@ -557,9 +557,23 @@ textarea::-webkit-input-placeholder {
   color: #666;
 }
 .details_main .course-list .chapter-list .chapter .chapter-name {
+  position: relative;
   font-size: 14px;
   line-height: 2em;
   color: #333;
+  cursor: pointer;
+}
+.details_main .course-list .chapter-list .chapter .chapter-name .icon-stretch {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 28px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.details_main .course-list .chapter-list .chapter .chapter-name .icon-stretch > img {
+  width: 14px;
+  height: auto;
 }
 .details_main .course-list .chapter-list .chapter .section-list {
   padding: 0 10px;
