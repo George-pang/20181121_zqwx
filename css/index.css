@@ -102,12 +102,13 @@ textarea::-webkit-input-placeholder {
   right: 9.5px;
   top: 6.5px;
   width: 35px;
-  height: 17px;
-  line-height: 17px;
+  height: 18px;
+  padding: 3px 0;
   border-radius: 8.5px;
   font-size: 12px;
   color: #f7f7f7;
   text-align: center;
+  box-sizing: border-box;
 }
 .index_main .column-tjkc .tj-course-list .vip::after {
   content: "VIP";

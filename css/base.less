@@ -32,6 +32,7 @@ input{
     outline: none;
     border: none;
 }
+/* input 占位符字体颜色 */
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #999; 
 }
@@ -49,6 +50,15 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 color: #999;
 }
+/* 超出两行省略 */
+.ellipsis-2{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+}
+
 /* 搜索条 */
 .search-box{
     position: fixed;
@@ -63,9 +73,17 @@ color: #999;
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 0 10px;
+        // padding: 0 10px;
         background-color: #2869db;
         border-radius: 5px;
+        overflow: hidden;
+        >a{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            height: 100%;
+            padding: 0 10px;
+        }
         .search-icon{
             margin-right: 10px;
             >img{
@@ -77,7 +95,10 @@ color: #999;
             flex: 1;
             >input{
                 width: 100%;
-                padding: 2px 0;
+                font-size: 14px;
+                height: 24px;
+                line-height: 24px;
+                // padding: 2px 0;
                 background-color: transparent;
                 color: #fff;
             }

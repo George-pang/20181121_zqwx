@@ -68,6 +68,7 @@
   height: auto;
 }
 .my_main .my-list > .list .my-course .course-list {
+  width: 3000px;
   overflow: hidden;
 }
 .my_main .my-list > .list .my-course .course-list .course-item {

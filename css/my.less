@@ -72,6 +72,7 @@
             .my-course{
                 .course-list{
                     // height: 100px; //ul不限制高度，li从换行到单行会有个闪烁--解决思路：ul、li高度设为一致
+                    width: 3000px; //解决办法---给ul一个超出屏幕的宽度，加载后js控制变为li宽度之和，初始就不会换行，故不会闪烁
                     overflow: hidden;
                     .course-item{
                         float: left;
